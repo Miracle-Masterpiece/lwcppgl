@@ -108,6 +108,10 @@ namespace lwcppgl
         keyboard_impl::create();
     }
 
+    void keyboard::destroy() {
+        keyboard_impl::destroy();
+    }
+
     bool keyboard::get_event_key_state() {
         return keyboard_impl::get_event_key_state();
     }
